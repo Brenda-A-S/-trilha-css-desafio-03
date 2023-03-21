@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+}
+
+.menu {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0.6%;
+    height: 56px;
+}
+
+.item {
+    width: 20%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.item1 {
+    padding-left: 16px;
+    gap: 32px;
+}
+
+.item2 {
+    flex-grow: 4;
+    justify-content: center;
+    align-self: center;
+}
+
+input {
+    width: 348px;
+    height: 40px;
+    border: 1px solid rgba(204, 204, 204, 1)
+}
+
+button {
+    width: 57px;
+    height: 40px;
+    border: 1px solid rgba(204, 204, 204, 1);
+    background: linear-gradient(0deg, #F9F9F9, #faf2f2,
+            linear-gradient(0deg, #F8F8F8, #F8F8F8));
+}
+
+button img {
+    width: 50%;
+    padding-right: 8%;
+}
+
+.item3 {
+    justify-content: flex-end;
+    padding-right: 16px;
+    gap: 30px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    background-color: #F9F9F9;
+}
+
+.sidebar {
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    gap: 22px;
+    padding-top: 5%;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+li {
+    padding: 1vw;
+    list-style: none;
+    gap: 10px;
+}
+
+a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+
+}
+
+.sidebar img {
+    padding-right: 1vw;
+}
+
+.sidebar span {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.main-grid {
+    display: grid;
+    width: 100%;    
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-columns: 25%;
+    grid-auto-rows: 1fr;
+    font-size: 14px;
+    padding: 30px;
+}
+
+.itens {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    
+    
+}
+
+.channel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 197px;
+    height: 74px;    
+
+}
+.channel span {
+    font-weight: 600;
+    
+}
+.thumb{
+    width: 95%;
+}
+.item-grid11{
+    order: -1;
+}
+.item-grid12{
+    order:-5;
+}
+.item-grid8{
+    order: -3;
+}
+.channel-icon{
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+}
+.txt-ellipses {
+    white-space: nowrap;
+    width: 197px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
